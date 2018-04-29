@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+<div class="container">
+
+    <h1>Uradjeni alati:</h1>
+    
+
+    <div class="albumsClass">
+        {% for i in "xxxxxxxxx"  %}
+            <div class="albumsCont">
+                <img src="{% static 'images/Products/Alke/Photo0257.jpg' %}" alt="problem">
+                <p>Primer {{ forloop.counter }}.</p>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
+    
+{% endblock content %}
+ 
+    

@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    grid-template-rows: 80px 90% 50px;
+}
+
+nav {
+    grid-row-start: 1;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    object-fit: scale-down;
+}
+
+.container {
+    grid-row-start: 2;
+}
+
+.albumsClass {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 32% 32% 32%;
+    grid-gap: 1%;
+    justify-content: center;
+}
+
+.albumsCont {
+    /* grid-column-start: 1;
+    grid-row-start: 1; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.albumsCont img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+
+    grid-row-start: -1;
+    background-color: greenyellow;
+}
